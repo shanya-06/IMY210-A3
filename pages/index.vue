@@ -9,7 +9,7 @@ const { data: posts, error } = await useFetch(
 
 <template>
   <main style="padding: 2rem;">
-    <h1>📰 Homepage</h1>
+    <h1> Homepage</h1>
 
     <div v-if="error">
       <p>Error loading posts.</p>
@@ -33,3 +33,9 @@ const { data: posts, error } = await useFetch(
     </div>
   </main>
 </template>
+
+<style scoped>
+  h1{
+    text-align: center;
+  }
+</style>

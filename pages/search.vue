@@ -30,9 +30,11 @@ async function search() {
 
 <template>
   <main style="padding: 2rem;">
-    <h1>🔍 Search Blogs</h1>
+    <h1> Search Blogs</h1>
 
-    <SearchBar v-model="query" @search="search" />
+    <div id="search">
+      <SearchBar v-model="query" @search="search" />
+    </div>
 
     <div v-if="error">{{ error }}</div>
     <div v-else-if="results.length === 0 && query">No results found.</div>
@@ -46,3 +48,13 @@ async function search() {
     </div>
   </main>
 </template>
+
+<style scoped>
+ h1{
+  text-align: center;
+ }
+
+ #search{
+  text-align: center;
+ }
+</style>

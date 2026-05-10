@@ -8,3 +8,10 @@ import NavBar from "~/components/NavBar.vue";
     <NuxtPage />
   </div>
 </template>
+
+<style scoped>
+  *{
+    background-color: rgb(178, 189, 236) ;
+
+  }
+</style>

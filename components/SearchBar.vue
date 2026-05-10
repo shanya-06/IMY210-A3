@@ -14,9 +14,35 @@ defineEmits(["update:modelValue", "search"]);
     />
     <button
       @click="$emit('search')"
-      style="margin-left: 0.5rem; padding: 0.5rem 1rem; background: #0070f3; color: white; border: none; border-radius: 4px;"
     >
       Search
     </button>
   </div>
 </template>
+
+<style scoped>
+  input:hover{
+    background-color: rgba(190, 237, 249, 0.81);
+  }
+  
+  input{
+    color: rgb(5, 40, 73);
+  }
+
+  button{
+    margin-left: 0.5rem;
+    padding: 0.5rem 1rem; 
+    background: #0070f3; 
+    color: white; 
+    border-radius: 4px;
+  }
+
+  button:hover{
+    background-color:  #125cb1;
+  }
+
+  button:active{
+    background-color:  #042c5b;
+  }
+
+</style>>
