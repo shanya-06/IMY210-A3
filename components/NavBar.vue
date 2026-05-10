@@ -1,6 +1,6 @@
 <template>
-  <nav style="padding: 1rem; background: #f5f5f5; border-bottom: 1px solid #ddd;">
-    <ul style="display: flex; gap: 1rem; list-style: none; margin: 0; padding: 0;">
+  <nav>
+    <ul>
       <li><NuxtLink to="/" active-class="active-link">Home</NuxtLink></li>
       <li><NuxtLink to="/search" active-class="active-link">Search</NuxtLink></li>
      
@@ -9,10 +9,42 @@
 </template>
 
 <style scoped>
-/* Style for active link */
+nav{
+  padding: 20px;
+  font-size: large;
+  text-align: center;
+  background-color: rgb(168, 219, 216);
+}
+
+ul{
+  display: inline-flex;
+  margin: 10px;
+  
+}
+
+li{
+  margin: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  list-style: none;
+  text-align: center;
+}
+
 .active-link {
   font-weight: bold;
-  color: #0070f3; /* Nuxt blue */
-  text-decoration: underline;
+  color: #00d0ff; 
+  border: 2px solid #015860c7;
+  border-radius: 7px;
+  padding: 4px;
+  background-color: #038591b1;
+}
+
+a:hover{
+  color: white;
+}
+
+a{
+  text-decoration: none;
+  color: #015860;
 }
 </style>
