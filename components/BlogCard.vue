@@ -1,6 +1,7 @@
 <script setup>
+//Shanya Nair - u25061845
 defineProps({
-  id: Number,
+  id: String,
   title: String,
   content: String,
   author: String
@@ -64,10 +65,11 @@ defineProps({
 
   article:hover{
     background-color: rgb(237, 255, 255);
-    p{
+  }
+
+  article:hover p{
       background-color: rgba(176, 235, 215, 0.486);
     };
-  }
 
   a:hover{
     color: rgb(1, 34, 35);

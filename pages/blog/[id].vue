@@ -1,4 +1,5 @@
 <script setup>
+//Shanya Nair - u25061845
 const route = useRoute();
 
 const { data: posts, error } = await useFetch(
@@ -70,10 +71,11 @@ const { data: posts, error } = await useFetch(
 
   article:hover{
     background-color: rgb(237, 255, 255);
-    p{
-      background-color: rgba(176, 235, 215, 0.486);
-    };
   }
+
+  article:hover p{
+      background-color: rgba(176, 235, 215, 0.486);
+    }
 
   a:hover{
     color: rgb(1, 34, 35);

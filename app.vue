@@ -1,4 +1,5 @@
 <script setup>
+//Shanya Nair - u25061845 
 import NavBar from "~/components/NavBar.vue";
 </script>
 

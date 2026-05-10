@@ -1,14 +1,14 @@
 <script setup>
 import BlogCard from "~/components/BlogCard.vue";
 
-// Fetch all blogs from Strapi
+// Shanya Nair - u25061845
 const { data: posts, error } = await useFetch(
   "https://phenomenal-respect-ee4f828725.strapiapp.com/api/blogs"
 );
 </script>
 
 <template>
-  <main style="padding: 2rem;">
+  <main>
     <h1> Homepage</h1>
 
     <div v-if="error">
@@ -21,13 +21,13 @@ const { data: posts, error } = await useFetch(
 
     <div v-else>
     <BlogCard
-  v-for="post in posts.data"
-  :key="post.documentId"
-  :id="post.documentId"
-  :title="post.Ttitle"
-  :content="post.content"
-  :author="post.author"
-/>
+      v-for="post in posts.data"
+      :key="post.documentId"
+      :id="post.documentId"
+      :title="post.Ttitle"
+      :content="post.content"
+      :author="post.author"
+    />
 
 
     </div>
@@ -35,6 +35,10 @@ const { data: posts, error } = await useFetch(
 </template>
 
 <style scoped>
+  main{
+    padding: 2rem;
+  }
+
   h1{
     text-align: center;
   }

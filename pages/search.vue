@@ -1,4 +1,5 @@
 <script setup>
+//Shanya Nair - u25061845
 import { ref } from "vue";
 import BlogCard from "~/components/BlogCard.vue";
 import SearchBar from "~/components/SearchBar.vue";
@@ -19,7 +20,7 @@ async function search() {
     );
 
     const data = await res.json();
-    console.log(data); // Debug: see what Strapi returns
+    console.log(data);
     results.value = data.data;
     error.value = null;
   } catch (err) {

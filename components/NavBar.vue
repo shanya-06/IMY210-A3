@@ -1,4 +1,5 @@
 <template>
+  <!--Shanya Nair - u25061845-->
   <nav>
     <ul>
       <li><NuxtLink to="/" active-class="active-link">Home</NuxtLink></li>
